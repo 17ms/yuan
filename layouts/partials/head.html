@@ -1,0 +1,41 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+/>
+
+<!-- Style -->
+<link rel="stylesheet" href="css/main.css" />
+
+<!-- Title -->
+{{- if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+  <meta name="title" content="{{ .Site.Title }}" />
+{{- else -}}
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  <meta name="title" content="{{ .Title }} &middot; {{ .Site.Title }}" />
+{{- end -}}
+
+<!-- Metadata -->
+<meta
+  name="description"
+  content="{{ with .Params.description }}{{ . }}
+  {{- else }}{{ if or .IsPage .IsSection }}{{ .Summary | default .Site.Title }}
+  {{- else }}{{ .Site.Params.description }}{{ end }}{{ end }}"
+/>
+<meta name="robots" content="index, follow" />
+<meta name="canonical" href="{{ .Permalink }}" />
+{{- with .Site.Author.name }}
+<meta name="author" content="{{ . }}" />
+{{- end }}
+
+<!-- Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.Params.assets.appleTouchIcon | default "apple-touch-icon.png" | absURL }}">
+<link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.Params.assets.favicon32 | default "favicon-32x32.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16 | default "favicon-16x16.png" | absURL }}">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="{{ site.Params.assets.safariPinnedTabIcon | default "safari-pinned-tab.svg" | absURL }}" color="{{ site.Params.assets.safariPinnedTabColor | default "#030303" }}">
+<meta name="msapplication-TileColor" content="{{ site.Params.assets.msTileColor | default "#2b5797" }}">
+<meta name="theme-color" content="{{ site.Params.assets.themeColor | default "#030303" }}">

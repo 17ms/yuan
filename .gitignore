@@ -1,0 +1,15 @@
+# Node
+node_modules/
+
+# Testing
+content/
+hugo.yaml
+static/*.ico
+static/*.png
+
+# Hugo build
+**/public/
+**/resources/_gen
+.hugo_build.lock
+
+TODO.md

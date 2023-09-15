@@ -1,0 +1,8 @@
+name = "Sierra"
+license = "MIT"
+licenselink = "https://github.com/17ms/sierra/blob/master/LICENSE"
+min_version = "0.117.0"
+
+[author]
+    name = "17ms"
+    homepage = "https://golfed.xyz"
