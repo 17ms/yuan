@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Sequel100";
-  src: url("/fonts/Sequel100.woff2") format("woff2");
+  font-family: "MinnePetat";
+  src: url("/fonts/MinnePetat.woff2") format("woff2");
 }
 
 @viewport {
@@ -13,12 +13,12 @@
   --color-bg: #030303;
   --color-primary: #f5eee4;
   --color-secondary: #111111;
-  --color-accent: #80d9fc;
-  --color-accent-secondary: #4d5ef8;
+  --color-accent: #feb181;
+  --color-accent-secondary: #ff7b29;
   --color-borders: #202020;
-  --color-gradient-1: #1714b4;
-  --color-gradient-2: #a200ff;
-  --color-gradient-3: #80d9fc;
+  --color-gradient-1: #f2730b;
+  --color-gradient-2: #ff0000;
+  --color-gradient-3: #fea184;
 }
 
 body {
@@ -43,7 +43,7 @@ main {
 @media screen and (orientation: portrait) {
   .navbar {
     margin: 0.5em;
-    font-family: Sequel100, sans-serif;
+    font-family: MinnePetat, sans-serif;
     font-weight: 100;
     font-size: 1.8em;
     display: flex;
@@ -146,7 +146,7 @@ main {
   }
 
   .navbar {
-    font-family: Sequel100, sans-serif;
+    font-family: MinnePetat, sans-serif;
     font-weight: 100;
     display: flex;
     justify-content: center;
@@ -185,7 +185,7 @@ main {
 }
 
 .not-found {
-  font-family: Sequel100, sans-serif;
+  font-family: MinnePetat, sans-serif;
   font-weight: 100;
   display: flex;
   flex: 2;
@@ -223,7 +223,7 @@ main {
 }
 
 .landing {
-  font-family: Sequel100, sans-serif;
+  font-family: MinnePetat, sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
