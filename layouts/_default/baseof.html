@@ -8,20 +8,20 @@
   </head>
   <body>
     <header>
-      {{ if (not .IsHome) }}
+      {{- if (not .IsHome) -}}
         {{ partialCached "header.html" . }}
-      {{ end }}
+      {{- end -}}
     </header>
     <main>
       <div id="mauser"></div>
-      {{ block "main" . }}{{ end }}
+      {{ block "main" . }}{{- end -}}
     </main>
     <footer>
-      {{ if hugo.IsProduction }}
+      {{- if hugo.IsProduction -}}
         {{ partialCached "footer.html" . }}
-      {{ else }}
+      {{- else -}}
         {{ partial "footer.html" }}
-      {{ end }}
+      {{- end -}}
     </footer>
     <script>
       const mauser = document.getElementById("mauser")

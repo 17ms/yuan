@@ -13,8 +13,8 @@
   --color-bg: #030303;
   --color-primary: #f5eee4;
   --color-secondary: #111111;
-  --color-accent: #feb181;
-  --color-accent-secondary: #ff7b29;
+  --color-accent: #81c2fe;
+  --color-accent-secondary: #f89f68;
   --color-borders: #202020;
   --color-gradient-1: #f2730b;
   --color-gradient-2: #ff0000;
@@ -165,7 +165,7 @@ main {
   }
 
   .navlinks a:hover {
-    background-position: 100%;
+    background-position: 120%;
     background-position: background-position 0.2s ease;
   }
 
@@ -234,7 +234,7 @@ main {
 }
 
 .landing h1 {
-  font-size: min(8vw, 4.5em);
+  font-size: min(12vw, 4.5em);
   text-transform: uppercase;
   margin: 0;
 }

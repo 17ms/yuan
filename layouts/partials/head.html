@@ -6,7 +6,7 @@
 />
 
 <!-- Style -->
-<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="/css/main.css" />
 
 <!-- Title -->
 {{- if .IsHome -}}
@@ -20,15 +20,15 @@
 <!-- Metadata -->
 <meta
   name="description"
-  content="{{ with .Params.description }}{{ . }}
-  {{- else }}{{ if or .IsPage .IsSection }}{{ .Summary | default .Site.Title }}
-  {{- else }}{{ .Site.Params.description }}{{ end }}{{ end }}"
+  content="{{- with .Params.description -}}{{ . }}
+  {{- else -}}{{- if or .IsPage .IsSection -}}{{ .Summary | default .Site.Title }}
+  {{- else -}}{{ .Site.Params.description }}{{- end -}}{{- end -}}"
 />
 <meta name="robots" content="index, follow" />
 <meta name="canonical" href="{{ .Permalink }}" />
-{{- with .Site.Author.name }}
-<meta name="author" content="{{ . }}" />
-{{- end }}
+{{- with .Site.Author.name -}}
+  <meta name="author" content="{{ . }}" />
+{{- end -}}
 
 <!-- Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ site.Params.assets.appleTouchIcon | default "apple-touch-icon.png" | absURL }}">

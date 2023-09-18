@@ -6,8 +6,8 @@
     <div class="bottom"></div>
   </label>
   <nav class="navlinks">
-    {{- range site.Menus.main }}
-      <a href="{{ trim .URL "/" | absURL }}" {{- if .Params.newTab }} target="_blank"{{ end -}}>{{ .Name }}</a>
-    {{- end }}
+    {{- range site.Menus.main -}}
+      <a href="{{ trim .URL "/" | absURL }}" {{- if .Params.newTab -}} target="_blank"{{- end -}}>{{ .Name }}</a>
+    {{- end -}}
   </nav>
 </nav>
