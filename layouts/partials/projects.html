@@ -1,0 +1,20 @@
+<section class="projects-section section" id="projects">
+  <div class="projects-container">
+    <h1>Projects</h1>
+    <div class="projects-display">
+      {{- range site.Params.itemDisplays -}}
+        <a
+          href="{{ .url }}"
+          target="_blank"
+          rel="noopener noreferrer me"
+          title="{{ .title }}"
+        >
+          <div class="projects-item">
+            <h2>{{ .name }}</h2>
+            <article>{{ .description }}</article>
+          </div>
+        </a>
+      {{- end -}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<section class="about-section section" id="about">
+  <div class="about-container">
+    <h1>{{ .Title }}</h1>
+    <article>{{ .Content }}</article>
+  </div>
+  <div class="socials-container">
+    {{- range site.Params.socialIcons -}}
+      <a
+        href="{{ trim .url " " | safeURL }}"
+        target="_blank"
+        rel="noopener noreferrer me"
+        title="{{ .display | default (title .name) }}"
+      >
+        {{ partial "svg.html" . }}
+      </a>
+    {{- end -}}
+  </div>
+</section>

@@ -1,11 +1,21 @@
 {
   "plugins": ["prettier-plugin-go-template"],
+  "useTabs": false,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "semi": false,
   "proseWrap": "always",
   "overrides": [
     {
       "files": ["*.html"],
       "options": {
         "parser": "go-template"
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "proseWrap": "never"
       }
     }
   ]

@@ -1,9 +1,17 @@
-{{ define "main" }}
-  <div class="landing">
-    {{- range site.Menus.main }}
-      <h1>
-        <a href="{{ trim .URL "/" | absURL }}" {{- if .Params.newTab }} target="_blank"{{ end -}}>{{ .Name }}</a>
-      </h1>
-    {{- end }}
-  </div>
-{{ end }}
+<!doctype html>
+<html
+  lang="{{ .Site.Language | default "en-GB" }}"
+  dir="{{ .Language.LanguageDirection | default "auto" }}"
+>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    <main>
+      <div id="mauser"></div>
+      {{ partial "home.html" . }}
+      {{ partial "about.html" . }}
+      {{ partial "projects.html" . }}
+    </main>
+    {{ partial "footer.html" }}
+  </body>
+</html>
