@@ -3,7 +3,7 @@
     <h1 class="section-header">{{ .Title }}</h1>
     <article class="section-article">{{ .Content }}</article>
   </div>
-  <div id="socials-container" class="interactable">
+  <div id="socials-container" class="interactable section-container">
     {{- range site.Params.socialIcons -}}
       <a
         href="{{ trim .url " " | safeURL }}"

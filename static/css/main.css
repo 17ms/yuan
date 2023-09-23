@@ -12,7 +12,7 @@
 :root {
   --color-bg: #030303;
   --color-primary: #f5eee4;
-  --color-secondary: #111111;
+  --color-secondary: #161616;
   --color-socials: #dad184;
   --color-borders: #202020;
   --color-gradient-1: #523fff;
@@ -44,6 +44,14 @@ svg {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1 h2 article p {
+  pointer-events: none;
 }
 
 .centered {
@@ -95,7 +103,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   padding: 0;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 1em 0;
   width: 100%;
 }
 
@@ -126,6 +134,7 @@ a {
 #page-logo {
   height: 3em;
   margin: 2em 0 0 0;
+  filter: drop-shadow(0 0 3px var(--color-primary));
 }
 
 #navlinks {
@@ -216,47 +225,55 @@ a {
 
 /* ABOUT & SOCIALS */
 
-.socialicon {
+.social-icon {
   color: var(--color-primary);
   height: 2em;
   opacity: 0.6;
-  transition: ease-in-out 0.2s;
-}
-
-.socialicon:hover {
-  opacity: 1;
-  transition: ease-in-out 0.2s;
+  transition: all 0.8s ease;
 }
 
 #socials-container {
   display: flex;
   flex-direction: row;
-  margin-top: 1.5em;
+  margin-top: 2em;
   gap: 1.5em;
+}
+
+#socials-container a:hover > .social-icon {
+  opacity: 1;
+  color: var(--color-socials);
 }
 
 /* PROJECTS */
 
-#projects-container h1 h2 article {
-  pointer-events: none;
+.scrolling-container {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 30px;
 }
 
-#projects-display {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 3em;
-}
-
-#projects-item {
-  padding: 2em 1em;
+.card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-secondary);
-  border-radius: 10px;
-  color: var(--color-primary);
-  height: max-content;
+  border-radius: 12px;
+  width: 280px;
+  padding: 2em;
+  height: 100px;
 }
 
-#projects-item h2 {
+.card h2 {
+  padding: 0 0 0.5em 0;
+  margin: 0;
   color: var(--color-socials);
   font-size: 1.5em;
-  margin: 0 0 0.5em 0;
+}
+
+.card article {
+  color: var(--color-primary);
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 700;
 }

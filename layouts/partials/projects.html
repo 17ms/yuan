@@ -1,17 +1,19 @@
 <section id="projects" class="section">
   <div id="projects-container" class="centered section-container">
     <h1 class="section-header">Projects</h1>
-    <div id="projects-display">
+    <div id="projects-display" class="scrolling-container">
       {{- range site.Params.itemDisplays -}}
         <a
-          href="{{ .url }}"
+          href="{{ .url | safeURL }}"
           target="_blank"
           rel="noopener noreferrer me"
           title="{{ .title }}"
         >
-          <div id="projects-item" class="interactable">
+          <div id="projects-card" class="card interactable">
             <h2>{{ .name }}</h2>
-            <article class="section-article">{{ .description }}</article>
+            <article class="section-article">
+              {{ truncate 125 .description }}
+            </article>
           </div>
         </a>
       {{- end -}}
