@@ -2,28 +2,28 @@ const mouseAction = () => {
   const mauser = document.getElementById("mauser")
 
   document.onpointermove = (e) => {
-    // TODO: fix the disgusting if statement
-    if (
-      e.target.tagName === "A" ||
-      e.target.parentNode.tagName === "svg" ||
-      (e.target.parentNode &&
-        (e.target.parentNode.tagName === "A" ||
-          (e.target.parentNode.parentNode &&
-            e.target.parentNode.parentNode.tagName === "A")))
-    ) {
-      mauser.classList.add("mauser-hover")
-    } else {
-      mauser.classList.remove("mauser-hover")
-    }
+    const interactable = e.target.closest(".interactable"),
+      interacting = interactable !== null
 
-    mauser.animate(
-      {
-        left: `${e.clientX}px`,
-        top: `${e.clientY}px`,
-      },
-      { duration: 120, fill: "forwards" },
-    )
+    const x = e.clientX - mauser.offsetWidth / 2,
+      y = e.clientY - mauser.offsetHeight / 2
+
+    animateMauser(x, y, interacting)
   }
+}
+
+const animateMauser = (x, y, interacting) => {
+  if (interacting) {
+    mauser.classList.add("interacting")
+  } else {
+    mauser.classList.remove("interacting")
+  }
+
+  const keyframes = {
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 3 : 1})`,
+  }
+
+  mauser.animate(keyframes, { duration: 400, fill: "forwards" })
 }
 
 const scrollAction = () => {
