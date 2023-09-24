@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "MinnePetat";
-  src: url("/fonts/MinnePetat.woff2") format("woff2");
+  font-family: MinnePetat;
+  src: url(/fonts/MinnePetat.woff2) format("woff2");
 }
 
 @viewport {
@@ -46,7 +46,6 @@ body * {
 }
 
 body:hover * > #mauser {
-  /* Show the tracker only when hovering the body */
   opacity: 1;
 }
 
@@ -115,8 +114,6 @@ h1 h2 article p {
   margin: 0;
 }
 
-/* NAVIGATION */
-
 #sidenav * {
   padding: 0;
 }
@@ -166,15 +163,13 @@ h1 h2 article p {
   opacity: 0.8;
 }
 
-/* MOUSE TRACKER */
-
 #mauser {
   position: fixed;
   height: 20px;
   width: 20px;
   border-radius: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 10000;
   background-color: var(--color-primary);
   opacity: 0;
@@ -185,8 +180,6 @@ h1 h2 article p {
 #mauser.interacting {
   mix-blend-mode: difference;
 }
-
-/* LANDING/TITLE */
 
 .glowing-title {
   font-family: MinnePetat;
@@ -215,6 +208,7 @@ h1 h2 article p {
   from {
     text-shadow: 0 0 8px var(--color-primary);
   }
+
   to {
     text-shadow:
       0 0 10px var(--color-primary),
@@ -222,8 +216,6 @@ h1 h2 article p {
       0 0 30px var(--color-gradient-3);
   }
 }
-
-/* ABOUT & SOCIALS */
 
 .social-icon {
   color: var(--color-primary);
@@ -244,8 +236,6 @@ h1 h2 article p {
   color: var(--color-socials);
 }
 
-/* PROJECTS */
-
 .scrolling-container {
   display: flex;
   width: 100%;
@@ -260,7 +250,7 @@ h1 h2 article p {
   border-radius: 12px;
   width: 280px;
   padding: 2em;
-  height: 100px;
+  height: 120px;
 }
 
 .card h2 {
