@@ -49,21 +49,5 @@ const scrollAction = () => {
   })
 }
 
-const horizontalScroll = () => {
-  const container = document.getElementById("projects-display")
-  const cardWidth = document.getElementById("projects-card").offsetWidth
-
-  container.addEventListener("wheel", (e) => {
-    e.preventDefault()
-    const scrollDistance = e.deltaY * 3
-    container.scrollBy({
-      top: 0,
-      left: scrollDistance,
-      behavior: "smooth",
-    })
-  })
-}
-
 mouseAction()
 scrollAction()
-horizontalScroll()
