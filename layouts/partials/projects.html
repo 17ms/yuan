@@ -3,7 +3,7 @@
     <h1 class="section-header">Projects</h1>
     <div id="projects-display" class="scrolling-container snaps-inline">
       {{- range site.Params.itemDisplays -}}
-        <div id="projects-card" class="card interactable">
+        <div class="card interactable">
           <a
             href="{{ .url | safeURL }}"
             target="_blank"

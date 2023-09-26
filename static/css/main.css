@@ -3,12 +3,6 @@
   src: url(/fonts/MinnePetat.woff2) format("woff2");
 }
 
-@viewport {
-  width: device-width;
-  flex-shrink: 1;
-  zoom: 1;
-}
-
 :root {
   --color-bg: #030303;
   --color-primary: #f5eee4;
@@ -131,6 +125,7 @@ h1 h2 article p {
 
 #page-logo {
   height: 3em;
+  aspect-ratio: 1;
   margin: 0;
   filter: drop-shadow(0 0 3px var(--color-primary));
 }
@@ -180,14 +175,15 @@ h1 h2 article p {
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-animation: glow 4s ease-in-out infinite alternate;
+  /*-webkit-animation: glow 4s ease-in-out infinite alternate;
   -moz-animation: glow 4s ease-in-out infinite alternate;
-  animation: glow 4s ease-in-out infinite alternate;
+  animation: glow 4s ease-in-out infinite alternate;*/
+  text-shadow: 0 0 6px var(--color-primary);
   margin: 0;
   padding: 0;
 }
 
-@keyframes glow {
+/*@keyframes glow {
   from {
     text-shadow: 0 0 8px var(--color-primary);
   }
@@ -198,7 +194,7 @@ h1 h2 article p {
       0 0 20px var(--color-gradient-2),
       0 0 30px var(--color-gradient-3);
   }
-}
+}*/
 
 .social-icon {
   color: var(--color-primary);
