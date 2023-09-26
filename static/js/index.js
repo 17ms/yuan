@@ -1,4 +1,4 @@
-const mouseAction = () => {
+const mouseTracker = () => {
   const mauser = document.getElementById("mauser")
 
   document.onpointermove = (e) => {
@@ -8,11 +8,11 @@ const mouseAction = () => {
     const x = e.clientX - mauser.offsetWidth / 2,
       y = e.clientY - mauser.offsetHeight / 2
 
-    animateMauser(x, y, interacting)
+    animateTracker(x, y, interacting)
   }
 }
 
-const animateMauser = (x, y, interacting) => {
+const animateTracker = (x, y, interacting) => {
   if (interacting) {
     mauser.classList.add("interacting")
   } else {
@@ -26,7 +26,7 @@ const animateMauser = (x, y, interacting) => {
   mauser.animate(keyframes, { duration: 400, fill: "forwards" })
 }
 
-const scrollAction = () => {
+const highlightActiveMenuItem = () => {
   const sections = document.querySelectorAll(".section")
   window.addEventListener("scroll", () => {
     let sy = window.scrollY
@@ -49,5 +49,8 @@ const scrollAction = () => {
   })
 }
 
-mouseAction()
-scrollAction()
+if (document.getElementById("mauser") !== null && window.innerWidth > 768) {
+  mouseTracker()
+}
+
+highlightActiveMenuItem()

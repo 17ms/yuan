@@ -7,9 +7,11 @@
   <body>
     {{ partial "header.html" . }}
     <main>
-      <div id="mauser">
-        <i id="hover-icon"></i>
-      </div>
+      {{- if site.Params.enableMouseTracker -}}
+        <div id="mauser">
+          <i id="hover-icon"></i>
+        </div>
+      {{- end -}}
       {{ partial "home.html" . }}
       {{ partial "about.html" . }}
       {{ partial "projects.html" . }}

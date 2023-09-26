@@ -1,4 +1,5 @@
 name = "Yuan"
+description = "Minimalistic SPA theme for Hugo"
 license = "MIT"
 licenselink = "https://github.com/17ms/yuan/blob/master/LICENSE"
 min_version = "0.117.0"

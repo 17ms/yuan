@@ -2,6 +2,8 @@
 
 The theme I use on [golfed.xyz](https://golfed.xyz). I wasn't able to find a good middle-ground theme that'd be visually pleasing, but still have a minimalistic structure, so I decided to create a theme of my own. The theme is built around three main sections: landing/title, about, and projects. It's perfect for links to other social platforms, a short description about yourself, and a handful of your personal projects in a single-page form.
 
+## Screenshots
+
 <div align="center">
   <img src="https://github.com/17ms/yuan/blob/master/.github/docs/home-screen.png/">
   <img src="https://github.com/17ms/yuan/blob/master/.github/docs/about-screen.png/">
@@ -18,7 +20,7 @@ git submodule add --depth=1 https://github.com/17ms/yuan.git themes/yuan
 git submodule update --init --recursive
 ```
 
-Use the template below to configure the theme:
+Use the `hugo.yaml` template below to configure the theme:
 
 ```yaml
 baseURL: https://example.com/
@@ -31,6 +33,9 @@ theme: yuan
 
 params:
   description: Example description
+
+  # Mouse tracking animation
+  enableMouseTracker: false
 
   assets:
     favicon: "/images/favicon.ico"
@@ -54,7 +59,7 @@ params:
   # Summaries longer than 145 characters will be truncated.
   itemDisplays:
     - name: Example project
-      url: "https://github.com"
+      url: "#"
       description: Project description example
 
   label:

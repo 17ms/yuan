@@ -175,26 +175,10 @@ h1 h2 article p {
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   text-transform: uppercase;
-  /*-webkit-animation: glow 4s ease-in-out infinite alternate;
-  -moz-animation: glow 4s ease-in-out infinite alternate;
-  animation: glow 4s ease-in-out infinite alternate;*/
   text-shadow: 0 0 6px var(--color-primary);
   margin: 0;
   padding: 0;
 }
-
-/*@keyframes glow {
-  from {
-    text-shadow: 0 0 8px var(--color-primary);
-  }
-
-  to {
-    text-shadow:
-      0 0 10px var(--color-primary),
-      0 0 20px var(--color-gradient-2),
-      0 0 30px var(--color-gradient-3);
-  }
-}*/
 
 .social-icon {
   color: var(--color-primary);
