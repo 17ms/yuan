@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "prettier": "^3.0.3",
     "prettier-plugin-go-template": "^0.0.15"
   }

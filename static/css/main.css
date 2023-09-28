@@ -248,42 +248,10 @@ h1 h2 article p {
   font-weight: 700;
 }
 
-@media screen and (orientation: landscape) {
-  body * {
-    cursor: default;
-  }
-
-  body:hover * > #mauser {
-    opacity: 1;
-  }
-
-  #mauser {
-    position: fixed;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    left: 0;
-    top: 0;
-    z-index: 10000;
-    background-color: var(--color-primary);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-  }
-
-  #mauser.interacting {
-    mix-blend-mode: difference;
-  }
-}
-
 @media screen and (orientation: portrait) {
   body {
     margin: 1em;
     overflow-x: hidden;
-  }
-
-  #mauser {
-    display: none;
   }
 
   .glowing-title {

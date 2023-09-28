@@ -1,7 +1,8 @@
 const mouseTracker = () => {
   const mauser = document.getElementById("mauser")
 
-  document.onpointermove = (e) => {
+  // Firefox doesn't support document.onmousemove for some reason
+  document.onmouseover = (e) => {
     const interactable = e.target.closest(".interactable"),
       interacting = interactable !== null
 
@@ -53,4 +54,6 @@ if (document.getElementById("mauser") !== null && window.innerWidth > 768) {
   mouseTracker()
 }
 
-highlightActiveMenuItem()
+if (window.location.pathname === "/") {
+  highlightActiveMenuItem()
+}
