@@ -38,17 +38,21 @@ params:
   # Mouse tracking animation
   enableMouseTracker: false
 
+  # Trunaction limit of summaries inside projects display containers
+  truncationLimit: 150
+
   # Logos, favicons and theme colors
   assets:
-    favicon: "/images/favicon.ico"
-    favicon16: "/images/favicon-16x16.png"
-    favicon32: "/images/favicon-32x32.png"
-    appleTouchIcon: "/images/apple-touch-icon.png"
-    safariPinnedTabIcon: "/images/safari-pinned-tab.svg"
+    favicon: "favicon.ico"
+    favicon16: "favicon-16x16.png"
+    favicon32: "favicon-32x32.png"
+    appleTouchIcon: "apple-touch-icon.png"
+    safariPinnedTabIcon: "safari-pinned-tab.svg"
     safariPinnedTabColor: "#5bbad5"
     manifest: "site.webmanifest"
     msTileColor: "#2b5797"
     themeColor: "#040404"
+    logo: "logo.svg"
 
   # Icons shown below the about text snippet
   # List of the available icons can be found in the /layouts/partials/svg.html file
@@ -58,7 +62,6 @@ params:
       display: Optional name shown in tooltips, defaults to capitalized name
 
   # List of displayed items (e.g. software projects)
-  # Summaries longer than 145 characters will be truncated.
   itemDisplays:
     - name: Example project
       url: "#"

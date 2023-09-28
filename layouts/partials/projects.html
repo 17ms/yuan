@@ -12,7 +12,7 @@
           >
             <h2>{{ .name }}</h2>
             <article class="section-article">
-              {{ truncate 150 .description }}
+              {{ truncate (site.Params.truncationLimit | default 150) .description }}
             </article>
           </a>
         </div>
