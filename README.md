@@ -4,25 +4,26 @@ The theme I use on [golfed.xyz](https://golfed.xyz). I wasn't able to find a goo
 
 ## Screenshots
 
-<div align="center">
-  <img src="https://github.com/17ms/yuan/blob/master/.github/docs/home-screen.png/">
-  <img src="https://github.com/17ms/yuan/blob/master/.github/docs/about-screen.png/">
-  <img src="https://github.com/17ms/yuan/blob/master/.github/docs/projects-screen.png/">
-</div>
+| Home | About | Projects |
+| :-: | :-: | :-: |
+| ![](.github/docs/home-screen.png) | ![](.github/docs/about-screen.png/) | ![](.github/docs/projects-screen.png/) |
 
 ## Usage
 
 The easiest way to install the theme is to use git submodules:
 
 ```shell
-git submodule add --depth=1 https://github.com/17ms/yuan.git themes/yuan
+$ git submodule add --depth=1 https://github.com/17ms/yuan.git themes/yuan
 # Required when recloning the repository (e.g. during automated deployment)
-git submodule update --init --recursive
+$ git submodule update --init --recursive
 ```
 
 Use the `hugo.yaml` template below to configure the theme:
 
 ```yaml
+# Note that due to performance reasons the custom webfont used in the site's
+# titles is stripped to only contain unicode range U+0000-007F
+
 baseURL: https://example.com/
 title: Example
 author: Example Author
@@ -37,6 +38,7 @@ params:
   # Mouse tracking animation
   enableMouseTracker: false
 
+  # Logos, favicons and theme colors
   assets:
     favicon: "/images/favicon.ico"
     favicon16: "/images/favicon-16x16.png"
@@ -44,7 +46,7 @@ params:
     appleTouchIcon: "/images/apple-touch-icon.png"
     safariPinnedTabIcon: "/images/safari-pinned-tab.svg"
     safariPinnedTabColor: "#5bbad5"
-    manifest: "/images/site.webmanifest"
+    manifest: "site.webmanifest"
     msTileColor: "#2b5797"
     themeColor: "#040404"
 
@@ -61,8 +63,4 @@ params:
     - name: Example project
       url: "#"
       description: Project description example
-
-  label:
-    text: "example.org"
-    icon: /favicon.ico
 ```
