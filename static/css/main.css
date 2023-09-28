@@ -1,6 +1,8 @@
 @font-face {
   font-family: MinnePetat;
-  src: url(/fonts/MinnePetat.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  src: url(/fonts/MinnePetat-Latin.woff2) format("woff2");
 }
 
 :root {
