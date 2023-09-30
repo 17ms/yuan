@@ -1,17 +1,17 @@
 @font-face {
-  font-family: MinnePetat;
+  font-family: ThirdStreet;
   font-style: normal;
-  font-weight: 100;
-  src: url(/fonts/MinnePetat-Latin.woff2) format("woff2");
+  font-weight: 900;
+  src: url(/fonts/ThirdStreetBold-Latin.woff2) format("woff2");
 }
 
 :root {
   --color-bg: #030303;
   --color-primary: #f5eee4;
   --color-secondary: #161616;
-  --color-socials: #dad184;
+  --color-socials: #8ad1f1;
   --color-borders: #202020;
-  --color-gradient-1: #523fff;
+  --color-gradient-1: #3fc9ff;
   --color-gradient-2: #7a1c50;
   --color-gradient-3: #e79f31;
 }
@@ -73,16 +73,16 @@ h1 h2 article p {
 }
 
 .section-header {
-  font-family: MinnePetat;
+  font-family: ThirdStreet;
   font-weight: 100;
   font-size: 2.5em;
   background: linear-gradient(
     to right,
     var(--color-socials),
-    var(--color-socials),
+    var(--color-primary),
     var(--color-primary)
   );
-  background-size: 600%;
+  background-size: 100%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,7 +129,8 @@ h1 h2 article p {
   height: 3em;
   aspect-ratio: 1;
   margin: 0;
-  filter: drop-shadow(0 0 3px var(--color-primary));
+  filter: drop-shadow(0 0 2px var(--color-primary)) invert(75%) sepia(28%)
+    saturate(526%) hue-rotate(167deg) brightness(200%) contrast(93%);
 }
 
 #navlinks {
@@ -162,7 +163,7 @@ h1 h2 article p {
 }
 
 .glowing-title {
-  font-family: MinnePetat;
+  font-family: ThirdStreet;
   font-size: 6em;
   background: linear-gradient(
     to right,
@@ -238,6 +239,7 @@ h1 h2 article p {
 .card h2 {
   padding: 0 0 0.5em 0;
   margin: 0;
+  font-family: ThirdStreet;
   color: var(--color-socials);
   font-size: 1.5em;
 }
