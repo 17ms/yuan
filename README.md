@@ -8,6 +8,10 @@ The theme I use on [golfed.xyz](https://golfed.xyz). I wasn't able to find a goo
 | :-: | :-: | :-: |
 | ![](.github/docs/home-screen.png) | ![](.github/docs/about-screen.png/) | ![](.github/docs/projects-screen.png/) |
 
+## Performance
+
+- [Yellow Lab Tools front-end performance analysis](https://yellowlab.tools/result/gp7ykoa52o)
+
 ## Usage
 
 The easiest way to install the theme is to use git submodules:
