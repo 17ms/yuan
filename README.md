@@ -49,7 +49,7 @@ params:
     appleTouchIcon: "apple-touch-icon.png"
     safariPinnedTabIcon: "safari-pinned-tab.svg"
     safariPinnedTabColor: "#5bbad5"
-    manifest: "site.webmanifest"
+    manifest: "manifest.json"
     msTileColor: "#2b5797"
     themeColor: "#040404"
     logo: "logo.svg"
