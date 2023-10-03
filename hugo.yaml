@@ -22,17 +22,17 @@ params:
 
   # Logos, favicons and theme colors
   assets:
-    favicon: "/images/favicon.ico"
-    favicon16: "/images/favicon-16x16.png"
-    favicon32: "/images/favicon-32x32.png"
-    appleTouchIcon: "/images/apple-touch-icon.png"
-    safariPinnedTabIcon: "/images/safari-pinned-tab.svg"
+    favicon: "images/favicon.ico"
+    favicon16: "images/favicon-16x16.png"
+    favicon32: "images/favicon-32x32.png"
+    appleTouchIcon: "images/apple-touch-icon.png"
+    safariPinnedTabIcon: "images/safari-pinned-tab.svg"
     safariPinnedTabColor: "#5bbad5"
-    manifest: "/manifest.json"
+    manifest: "manifest.json"
     msTileColor: "#2b5797"
-    msTileIcon: "/images/mstile-150x150.png"
+    msTileIcon: "images/mstile-150x150.png"
     themeColor: "#040404"
-    logo: "/images/logo-min.svg"
+    logo: "images/logo-min.svg"
 
   # Icons shown below the about text snippet
   # List of the available icons can be found in the /layouts/partials/svg.html file

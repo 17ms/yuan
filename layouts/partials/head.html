@@ -1,0 +1,68 @@
+<!-- Overwrite the default head.html for Github Pages compatibility -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Assets with cache busting applied -->
+  <!-- Note that intermediary caches may store separate copies with this technique, and you'd probably be better off with including versioning in filenames in that case -->
+  <link rel="stylesheet" href="main.css?v=2" />
+  <script src="js/index.js?v=1" defer></script>
+
+  <!-- Title -->
+  <title>{{ .Site.Title }}</title>
+  <meta name="title" content="{{ .Site.Title }}" />
+
+  <!-- Metadata -->
+  <meta name="description" content="{{ site.Params.description }}" />
+  <meta name="robots" content="index, follow" />
+  <meta name="canonical" href="{{ .Permalink }}" />
+  {{- with .Site.Author.name -}}
+    <meta name="author" content="{{ . }}" />
+  {{- end -}}
+
+
+  <!-- Icons -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="{{ site.Params.assets.appleTouchIcon | default "apple-touch-icon.png" | absURL }}"
+  />
+  <link
+    rel="icon"
+    href="{{ site.Params.assets.favicon | default "favicon.ico" |absURL }}"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="{{ site.Params.assets.favicon32 | default "favicon-32x32.png" | absURL }}"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{{ site.Params.assets.favicon16 | default "favicon-16x16.png" | absURL }}"
+  />
+  <link
+    rel="manifest"
+    href="{{ site.Params.assets.manifest | default "manifest.json" }}"
+  />
+  <link
+    rel="mask-icon"
+    href="{{ site.Params.assets.safariPinnedTabIcon | default "safari-pinned-tab.svg" | absURL }}"
+    color="{{ site.Params.assets.safariPinnedTabColor | default "#030303" }}"
+  />
+  <meta
+    name="msapplication-TileColor"
+    content="{{ site.Params.assets.msTileColor | default "#2b5797" }}"
+  />
+  <meta
+    name="msapplication-TileImage"
+    content="{{ site.Params.assets.msTileIcon | default "mstile-150x150.png" }}"
+  />
+  <meta
+    name="theme-color"
+    content="{{ site.Params.assets.themeColor | default "#030303" }}"
+  />
+</head>
