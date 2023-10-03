@@ -55,6 +55,7 @@ params:
     safariPinnedTabColor: "#5bbad5"
     manifest: "manifest.json"
     msTileColor: "#2b5797"
+    msTileIcon: "mstile-150x150.png"
     themeColor: "#040404"
     logo: "logo.svg"
 
