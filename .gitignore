@@ -1,3 +1,6 @@
+# No conflicts between testing branches
+themes/
+
 # Node
 node_modules/
 
