@@ -1,7 +1,7 @@
 # Note that due to performance reasons the custom webfont used in the site's
 # titles is stripped to only contain unicode range U+0000-007F
 
-baseURL: https://example.com/
+baseURL: https://17ms.github.io/yuan/
 title: Lorem Ipsum
 author: Lorem ipsum dolor sit amet
 language: en-GB
