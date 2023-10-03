@@ -7,7 +7,7 @@ author: Lorem ipsum dolor sit amet
 language: en-GB
 paginate: 10
 
-# theme: yuan
+theme: yuan
 
 params:
   description:
