@@ -1,16 +1,18 @@
-## Minimalistic SPA theme for Hugo
+## Fast and minimalistic SPA theme for Hugo
 
-The theme I use on [golfed.xyz](https://golfed.xyz). I wasn't able to find a good middle-ground theme that'd be visually pleasing, but still have a minimalistic structure, so I decided to create a theme of my own. The theme is built around three main sections: landing/title, about, and projects. It's perfect for links to other social platforms, a short description about yourself, and a handful of your personal projects in a single-page form.
+A good middle-ground between having a minimalistic, easy-to-use structure and being visually pleasing. The theme contains three anchored sections: landing/title, about, and projects. It's basically a SPA-structured interactive business card on the internet, and perfect for displaying a short description, links to other platforms, and a handful of personal projects. [Check out the demo site here.](https://17ms.github.io/yuan/)
+
+[![Hugo Themes](https://img.shields.io/badge/Hugo--Themes-@yuan-f5429b)](#) ![Website](https://img.shields.io/website?up_message=online&down_message=offline&url=https%3A%2F%2F17ms.github.io%2Fyuan%2F) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/17ms/yuan) ![GitHub](https://img.shields.io/github/license/17ms/yuan)
 
 ## Screenshots
 
 | Home | About | Projects |
 | :-: | :-: | :-: |
-| ![](.github/docs/home-screen.png) | ![](.github/docs/about-screen.png/) | ![](.github/docs/projects-screen.png/) |
+| ![](/images/home-screen.png) | ![](/images/about-screen.png/) | ![](/images/projects-screen.png/) |
 
 ## Performance
 
-- [Yellow Lab Tools front-end performance analysis](https://yellowlab.tools/result/gp7ykoa52o)
+- [Yellow Lab Tools front-end performance analysis](https://yellowlab.tools/result/gpauyycoc9)
 
 ## Usage
 

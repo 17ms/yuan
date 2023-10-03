@@ -1,7 +1,11 @@
 name = "Yuan"
-description = "Minimalistic SPA theme for Hugo"
 license = "MIT"
 licenselink = "https://github.com/17ms/yuan/blob/master/LICENSE"
+description = "Fast and minimalistic SPA theme for Hugo"
+homepage = "https://github.com/17ms/yuan"
+demosite = "https://17ms.github.io/yuan/"
+tags = ["single-page", "spa", "simple", "clean", "dark", "minimalist", "lightweight"]
+features = ["responsive", "single-page", "social-icons", "darkmode", "seo", "spa"]
 min_version = "0.117.0"
 
 [author]
