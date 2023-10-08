@@ -265,7 +265,6 @@ h1 h2 article p {
     width: 60vw;
     word-wrap: break-word;
     font-size: 3em;
-    writing-mode: vertical-rl;
     text-orientation: upright;
   }
 
