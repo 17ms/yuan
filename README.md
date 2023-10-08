@@ -6,7 +6,7 @@ A good middle-ground between having an ultra minimalistic, easy-to-use structure
 
 ## Screenshots
 
-![](/images/readme-screenshots.png)
+![](/images/screenshot.png)
 
 ## Performance
 
