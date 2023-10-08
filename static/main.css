@@ -174,10 +174,11 @@ h1 h2 article p {
     var(--color-gradient-3),
     var(--color-gradient-1)
   );
-  background-size: 120%;
+  background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 0 0 6px var(--color-primary);
@@ -232,6 +233,7 @@ h1 h2 article p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
   background-color: var(--color-secondary);
   border-radius: 12px;
   padding: 2em;
@@ -244,6 +246,7 @@ h1 h2 article p {
   font-family: ThirdStreet;
   color: var(--color-socials);
   font-size: 1.5em;
+  word-wrap: break-word;
 }
 
 .card article {
@@ -261,8 +264,9 @@ h1 h2 article p {
   }
 
   .glowing-title {
+    width: 60vw;
+    word-wrap: break-word;
     font-size: 3em;
-    writing-mode: vertical-rl;
     text-orientation: upright;
   }
 
