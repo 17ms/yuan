@@ -1,16 +1,18 @@
-## Fast and minimalistic SPA theme for Hugo
+## Minimalistic SPA theme for Hugo - [Demo](https://17ms.github.io/yuan/)
 
-A good middle-ground between having an ultra minimalistic, easy-to-use structure and being visually pleasing. The theme contains three anchored sections: landing/title, about, and projects. It's basically a SPA-structured interactive business card on the internet, and perfect for displaying a short description, links to other platforms, and a handful of personal projects. [Check out the demo site here.](https://17ms.github.io/yuan/)
+A minimal single-page application theme for Hugo. 
+
+### Features
+
+- Single-page application structure with interactive navbar
+- `About` section with minimal SVG icon pack for displaying socials
+- `Projects` section with horizontally scrollable card view of the items
+- Mobile friendly scaling
+- Toggleable mouse tracker/hover animation
+- Optimized CSS, JS, and webfonts ([Yellow Lab Tools analysis](https://yellowlab.tools/result/gpauyycoc9))
+- Small build size (~40 KB)
 
 [![Hugo Themes](https://img.shields.io/badge/Hugo--Themes-@Yuan-f5429b)](https://themes.gohugo.io/themes/yuan/) [![Website](https://img.shields.io/website?up_message=online&down_message=offline&url=https%3A%2F%2F17ms.github.io%2Fyuan%2F)](https://17ms.github.io/yuan/) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/17ms/yuan) [![GitHub](https://img.shields.io/github/license/17ms/yuan)](https://github.com/17ms/yuan/blob/master/LICENSE)
-
-## Screenshots
-
-![](/images/screenshot.png)
-
-## Performance
-
-- [Yellow Lab Tools front-end performance analysis](https://yellowlab.tools/result/gpauyycoc9)
 
 ## Usage
 
