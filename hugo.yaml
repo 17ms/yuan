@@ -20,7 +20,7 @@ params:
   # Trunaction limit of summaries inside projects display containers
   truncationLimit: 150
 
-  # Logos, favicons and theme colors
+  # Logos, favicons, and theme colors
   assets:
     favicon: "images/favicon.ico"
     favicon16: "images/favicon-16x16.png"

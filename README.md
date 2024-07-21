@@ -33,9 +33,7 @@ paginate: 10
 theme: yuan
 
 params:
-  description:
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis
-    condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
 
   # Mouse tracking animation
   enableMouseTracker: false
@@ -43,7 +41,7 @@ params:
   # Trunaction limit of summaries inside projects display containers
   truncationLimit: 150
 
-  # Logos, favicons and theme colors
+  # Logos, favicons, and theme colors
   assets:
     favicon: "/images/favicon.ico"
     favicon16: "/images/favicon-16x16.png"
@@ -83,18 +81,11 @@ params:
   itemDisplays:
     - name: lorem-ipsum-dolor-sit-amet
       url: "#"
-      description:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis
-        condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
     - name: consectetur-adipiscing-elit
       url: "#"
-      description:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis
-        condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
     - name: aeanean-lobortis-condimentum
       url: "#"
-      description:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis
-        condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
-
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis condimentum justo at suscipit. Sed vel sapien turpis. Sed dui.
 ```
